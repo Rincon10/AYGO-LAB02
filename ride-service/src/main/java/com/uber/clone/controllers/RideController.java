@@ -41,8 +41,8 @@ public class RideController {
         }
     }
 
-    @PutMapping("/{rideId}/update-status")
-    public ResponseEntity<Ride> assignDriver(@PathVariable Long rideId, @RequestBody String rideStatus) {
+    @PutMapping("/{rideId}/status")
+    public ResponseEntity<Ride> updateRideStatus(@PathVariable Long rideId, @RequestBody String rideStatus) {
         try {
             Ride ride = rideService.updateRideStatusById(rideId, rideStatus);
             return ResponseEntity.ok(ride);
