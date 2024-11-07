@@ -41,7 +41,7 @@ public class RideController {
         }
     }
 
-    @PutMapping("/{rideId}/status")
+    @PatchMapping("/{rideId}/status")
     public ResponseEntity<Ride> updateRideStatus(@PathVariable Long rideId, @RequestBody String rideStatus) {
         try {
             Ride ride = rideService.updateRideStatusById(rideId, rideStatus);
