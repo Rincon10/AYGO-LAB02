@@ -1,0 +1,8 @@
+curl -X POST https://t82prm6esb.execute-api.us-east-1.amazonaws.com/beta/fare \
+-H "Content-Type: application/json" \
+-d '{
+    "distance": 10,
+    "duration": 15,
+    "baseRate": 5,
+    "surgeMultiplier": 1.2
+}'

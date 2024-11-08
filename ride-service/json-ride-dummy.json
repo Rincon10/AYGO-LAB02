@@ -1,0 +1,8 @@
+{
+  "id": 1,
+  "userId": 123,
+  "driverId": 456,
+  "pickupLocation": "Calle 45 #12-34, Bogotá, Colombia",
+  "dropOffLocation": "Avenida 68 #40-15, Bogotá, Colombia",
+  "rideStatus": "IN_PROGRESS"
+}
