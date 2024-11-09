@@ -25,6 +25,10 @@ public class Ride {
     private String pickupLocation;
     private String dropOffLocation;
 
+    private Long fare;
+
+    private String paymentId;
+
     @Enumerated(EnumType.STRING)
     private RideStatus rideStatus;
 }

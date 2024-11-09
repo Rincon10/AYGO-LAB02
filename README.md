@@ -29,3 +29,8 @@ Diseñar una Arquitectura de Microservicios para una Plataforma de Transporte (e
 4. **Asignar Métodos HTTP**: Asignar los métodos HTTP adecuados (e.g., **GET** para recuperar detalles del viaje, **POST** para crear nuevas solicitudes de viaje, **PUT** para actualizar el estado del conductor) a las operaciones correspondientes para cada recurso.
 
 
+## Diagrama de clases 
+
+A continuacion se presenta los objetos del dominio
+
+![alt text](docs/img/04-diagrama-clases.png)
