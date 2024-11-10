@@ -7,6 +7,10 @@ En nuestro caso implementamos una funcion lambda, encargada de realizar la consu
 - tarifa base (puede ser en cualquier moneda, por ejemplo, dólares o pesos).
 - multiplicador de la tarifa
 
+
+
+## Representacion del recurso
+
 la representacion de dicha informacion sera representada en un formato json, como el siguiente:
 
 ```json
@@ -17,6 +21,8 @@ la representacion de dicha informacion sera representada en un formato json, com
     "surgeMultiplier": 1.2
 }
 ```
+## URI del recurso 
+
 
 Una vez definida la estructura de nuestro objeto, procederemos a crear la función Lambda encargada de leer, procesar y entregar una respuesta de la tarifa del viaje. Para esto, nos apoyaremos en la [siguiente función](fare-lambda-function.js).
 
@@ -30,6 +36,7 @@ Una vez configurada nuestra funcion lambda, podemos realizar una simulacion prob
 
 
 Por ultimo desplegaremos e integraremos con gateway de AWS, la funcion lambda y realizaremos una prueba de su funcionamiento, para estp podremos realizarlo de dos maneras
+
 
 1. utilizando cualquier plataforma que soporte consumo de APIS, como en el siguiente ejemplo
 ![alt text](../docs/img/03-probando-lambda-gateway.png)

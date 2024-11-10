@@ -29,8 +29,35 @@ Diseñar una Arquitectura de Microservicios para una Plataforma de Transporte (e
 4. **Asignar Métodos HTTP**: Asignar los métodos HTTP adecuados (e.g., **GET** para recuperar detalles del viaje, **POST** para crear nuevas solicitudes de viaje, **PUT** para actualizar el estado del conductor) a las operaciones correspondientes para cada recurso.
 
 
+## Recursos clave
+
+- Usuarios (Clientes): recurso que representa los clientes que solicitan el servicio de transporte
+- Conductores: recurso que representa a los usuarios que presentan el servicio de tranporte
+- Viajes: Detalle del viaje solicitado
+- Pagos: Pagos asociados a un viaje solicitado
+
+
+
 ## Diagrama de clases 
 
-A continuacion se presenta los objetos del dominio
+A continuacion se presenta los objetos del dominio y como estos se relacionan
 
 ![alt text](docs/img/04-diagrama-clases.png)
+
+## Definicion de recursos
+
+- [definición servicio de viajes](ride-service/README.md)
+- [definición servicio de usuarios ](user-service/README.md)
+- [definición servicio de conductores](driver-service/README.md)
+- [definición servicio de pagos](payment-service/README.md)
+- [función lambda tarifas de viajes](fare-lambda-function/README.md)
+
+
+## Arquitectura AWS orientada a micro servicios
+
+![alt text](docs/img/05-arquitectura-aws.png)
+
+## Arquitectura local (dado a que no se tienen todos los servicios disponibles para desplegarlos)
+
+
+![alt text](docs/img/06-arquitectura-spring.png)
