@@ -39,7 +39,7 @@ http://localhost:51627/swagger-ui/index.html
 
 si todo sale bien veremos lo siguiente 
 
-![alt text](../docs/img/10-uri-recursos-payment-service.png)
+![alt text](../docs/img/07-uri-recursos-ride-service.png)
 
 ## Representacion del recurso
 
