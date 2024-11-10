@@ -61,3 +61,11 @@ A continuacion se presenta los objetos del dominio y como estos se relacionan
 
 
 ![alt text](docs/img/06-arquitectura-spring.png)
+
+
+para validar el  funcionamiento del discovery puede acceder al puerto 8761 y ver los servicios suscritos
+
+
+en este caso tenemos varias instancias del servicio de viajes y de conductores, ademas del servicio de apiGateway
+
+![alt text](docs/img/11-recursos-registrados.png)

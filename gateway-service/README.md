@@ -47,26 +47,19 @@ spring:
           predicates:
             - Path=/api/v1/rides/**
           filters:
-            - StripPrefix=3
+            - StripPrefix=0
 
         - id: driver-service
           uri: lb://driver-service
           predicates:
             - Path=/api/v1/drivers/**
           filters:
-            - StripPrefix=3
+            - StripPrefix=0
 
         - id: payment-service
           uri: lb://payment-service
           predicates:
             - Path=/api/v1/payments/**
           filters:
-            - StripPrefix=3
-
-        - id: user-service
-          uri: lb://user-service
-          predicates:
-            - Path=/api/v1/users/**
-          filters:
-            - StripPrefix=3
+            - StripPrefix=0
 ```
