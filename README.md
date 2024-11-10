@@ -47,7 +47,6 @@ A continuacion se presenta los objetos del dominio y como estos se relacionan
 ## Definicion de recursos
 
 - [definición servicio de viajes](ride-service/README.md)
-- [definición servicio de usuarios ](user-service/README.md)
 - [definición servicio de conductores](driver-service/README.md)
 - [definición servicio de pagos](payment-service/README.md)
 - [función lambda tarifas de viajes](fare-lambda-function/README.md)

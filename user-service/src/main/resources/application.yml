@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: local
+server:
+  port: ${PORT:0}
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    url: jdbc:h2:mem:testdb
+    diver-class-name: org.h2.Driver
+  jpa:
+    database: h2
+    database-platform: org.hibernate.dialect.H2Dialect
+    generate-ddl: true
+  h2:
+    console:
+      enabled: true

@@ -34,7 +34,7 @@ public class RideServiceImpl implements RideService {
     @Override
     public Ride createNewRide(Ride ride) {
         Long rideId = ride.getId();
-        if (Objects.nonNull(rideId) && repository.findById(rideId).isPresent()) {
+        if (Objects.nonNull(rideId) && repository.findById(rideId).isEmpty()) {
             throw new RuntimeException("Ride with id " + ride.getId() + " already exists");
         }
         return repository.save(ride);
