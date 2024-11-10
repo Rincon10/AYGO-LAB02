@@ -49,6 +49,7 @@ A continuacion se presenta los objetos del dominio y como estos se relacionan
 - [definición servicio de viajes](ride-service/README.md)
 - [definición servicio de conductores](driver-service/README.md)
 - [definición servicio de pagos](payment-service/README.md)
+- [definición servicio de gateway](gateway-service/README.md)
 - [función lambda tarifas de viajes](fare-lambda-function/README.md)
 
 
