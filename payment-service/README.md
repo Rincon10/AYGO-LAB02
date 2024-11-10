@@ -1,4 +1,4 @@
-# Ride Service
+# Payment Service
 
 >[!IMPORTANT]
 Para que el proyecto se inicie correctamente sin ninguna excepción, es necesario iniciar primero el servicio de discovery. Esto permite que los diferentes servicios sepan a qué URL hacer las solicitudes. En caso de que no esté en ejecución, consulta el siguiente [manual](../discovery-service/README.md)
@@ -19,13 +19,13 @@ Para ejecutar el proyecto y establecer la variable de entorno URL_EUREKA_SERVER,
 
 
 ```bash
-URL_EUREKA_SERVER=http://localhost:8761/eureka java -cp "target/classes;target/dependency/*" com.uber.clone.RideServiceApplication
+URL_EUREKA_SERVER=http://localhost:8761/eureka java -cp "target/classes;target/dependency/*" com.uber.clone.PaymentServiceApplication
 ```
 
 ### Linux
 
 ```bash
-URL_EUREKA_SERVER=http://localhost:8761/eureka java -cp "target/classes:target/dependency/*" com.uber.clone.RideServiceApplication
+URL_EUREKA_SERVER=http://localhost:8761/eureka java -cp "target/classes:target/dependency/*" com.uber.clone.PaymentServiceApplication
 ```
 
 ## Uris de ride service
@@ -47,13 +47,18 @@ representacion de un viaje
 
 ```json
 {
-  "id": 1,
-  "userId": 123456,
-  "driverId": 654321,
-  "pickupLocation": "123 Street",
-  "dropOffLocation": "321 Street",
-  "fare": 45000,
-  "paymentId": "payment-id",
-  "rideStatus": "IN_PROGRESS"
+  "id": 5,
+  "amount": 0,
+  "paymentStatus": "PENDING",
+  "ride": {
+    "id": 1,
+    "userId": 123456,
+    "driverId": 654321,
+    "pickupLocation": "123 Street",
+    "dropOffLocation": "321 Street",
+    "fare": 45000,
+    "paymentId": "payment-id",
+    "rideStatus": "IN_PROGRESS"
+  }
 }
 ```
